@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="lib/bootstrap.min.css">
+<link rel="stylesheet" href="lib/fontello/css/fontello.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="script/app.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div class="container">
+        <div class="col-centered">
+            <div class="businessCard" ng-repeat="businessInfo in cards">
+                <div class="header">
+                <div class="row">
+                    <img class="col-centered" src={{businessInfo.logoUrl}}>
+                </div>
+                <div class="col-centered text-centered businessName">{{businessInfo.name}}</div>
+                </div>
+                <div class="col-centered text-centered sub-header">
+                    <span class="message">{{businessInfo.promoMessage}}</span>
+                    <div ng-hide="businessInfo.promoCode == null || businessInfo.promoCode == '' ">
+                        <span>Use promo code <span class="highlight">{{businessInfo.promoCode}}</span></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-centered">
+                        <ul class="features">
+                            <li ng-repeat="feature in businessInfo.features">
+                                <i class="icon icon-ok"></i>{{feature}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="links text-centered col-centered">
+                    <a class="highlight viewProfile" href="{{businessInfo.ctaUrl}}" target="_blank">View Profile</a> <br>
+                    <a href="{{businessInfo.profileHref}}" target="_blank"><button>{{businessInfo.ctaText}}</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

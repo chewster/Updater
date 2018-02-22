@@ -1,0 +1,66 @@
+ul {
+    list-style: none;
+    font-size: 13px;
+    padding: 0;
+}
+body {
+    background-color: RGB(245,245,245);
+}
+button {
+    background-color: RGB(60,130,166);
+    color: RGB(255,255,255);
+    padding: 15px 65px;
+    border: none;
+    margin: 10px 0;
+}
+.businessCard {
+    background-color: RGB(255,255,255);
+    margin: 0 25px;
+    width: 300px;
+    float: left;
+}
+.highlight {
+    font-weight: bold;
+    color: #000;
+}
+.col-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-centered {
+    text-align: center;
+}
+.businessName {
+    color: RGB(207,207,207);
+}
+.message {
+    color: RGB(167, 185, 187);
+}
+.sub-header {
+    height: 55px;
+    margin: 15px 0;
+}
+.header {
+    height: 130px;
+}
+.icon-ok {
+    color: RGB(114, 196, 159);
+}
+.features {
+    height: 145px;
+    margin: 10px 0;
+}
+@media screen and (max-width: 992px) {
+    .features {
+        display: none;
+    }
+    .businessCard {
+        margin: 20px auto;
+        padding: 20px 0;
+        min-width: 100%;
+    }
+    .viewProfile {
+        display: none;
+    }
+
+}
