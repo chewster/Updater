@@ -16,7 +16,7 @@
 {
   "ctaUrl": "https://www.updater.com",
   "ctaText": "Hire Labor",
-  "logoUrl": "https://www.simplemovinglabor.com/wp-content/uploads/2017/03/sml-logo-main.png",
+  "logoUrl": "http://res.cloudinary.com/updater-staging/image/upload/c_scale,h_70/sml.png",
   "promoMessage": "15% off labor",
   "promoCode": "",
   "features": [
